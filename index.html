@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tikdown — Video & Audio Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">↓</span><span>Tikdown</span></a>
+    <span class="top-note">Simple video tools</span>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="dot"></span> QUICK DOWNLOAD TOOL</div>
+      <h1>Video favoritmu,<br><span>tersimpan lebih mudah.</span></h1>
+      <p class="subtitle">Unduh video atau audio dari TikTok melalui satu link.<br>Tanpa langkah yang ribet.</p>
+
+      <div class="download-card">
+        <label for="urlInput">Link TikTok</label>
+        <div class="url-row">
+          <input id="urlInput" type="url" placeholder="https://www.tiktok.com/@user/video/..." autocomplete="off">
+          <button class="paste-btn" id="pasteBtn" type="button">Paste</button>
+        </div>
+        <div class="format-heading">Format</div>
+        <div class="format-options" role="group" aria-label="Format download">
+          <button class="format active" data-format="video" type="button"><span class="option-icon">▣</span><span><b>Video</b><small>MP4 · Tanpa watermark*</small></span></button>
+          <button class="format" data-format="audio" type="button"><span class="option-icon">♫</span><span><b>Audio</b><small>MP3</small></span></button>
+        </div>
+        <div class="quality-wrap" id="qualityWrap">
+          <label for="qualitySelect">Kualitas video</label>
+          <select id="qualitySelect"><option value="best">Kualitas terbaik (HD jika tersedia)</option><option value="1080p">1080p</option><option value="720p">720p</option><option value="480p">480p</option></select>
+        </div>
+        <button id="downloadBtn" class="download-btn" type="button"><span>Download video</span><span>↗</span></button>
+        <div class="status" id="status" aria-live="polite"></div>
+        <p class="disclaimer">*Kualitas dan ketersediaan bergantung pada video sumber dan layanan yang digunakan. Unduh konten yang kamu miliki atau diizinkan untuk disimpan.</p>
+      </div>
+      <div class="features">
+        <div><span class="feature-icon">↗</span><b>Praktis</b><small>Cukup salin & tempel link</small></div>
+        <div><span class="feature-icon">HD</span><b>Kualitas pilihan</b><small>Gunakan kualitas terbaik yang tersedia</small></div>
+        <div><span class="feature-icon">♫</span><b>Video & audio</b><small>Pilih format sesuai kebutuhan</small></div>
+      </div>
+    </section>
+  </main>
+  <footer>© 2026 Tikdown <span>Simple by design.</span></footer>
+  <script src="app.js"></script>
+</body>
+</html>
